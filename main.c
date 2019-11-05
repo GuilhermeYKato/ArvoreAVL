@@ -31,17 +31,21 @@ int main() {
         Obj.key = ret;
         insertItem(&TreeAVL, Obj);
         //printf("%i\n",ret);
+        inOrderDecresc(&TreeAVL);
+        printf("\n");
         fprintf(arqSaida,"%i\n",ret);
     }
-    preOrder(&TreeAVL);
-    printf("\n");
+//    preOrder(&TreeAVL);
+//    printf("\n");
+//
+//    posOrder(&TreeAVL);
+//    printf("\n");
+//
+//    inOrderDecresc(&TreeAVL);
+//    printf("\n");
 
-    posOrder(&TreeAVL);
+    inOrderCresc(&TreeAVL);
     printf("\n");
-
-    inOrderDecresc(&TreeAVL);
-    printf("\n");
-
 
     if(fclose(arqEntrada) != 0){
         printf("Erro ao fechar arquivo Entrada.txt\n");
